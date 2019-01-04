@@ -50,7 +50,7 @@
 
 
 ### Dealing with Truffle framework
-##### Refer here to know the right boiler plate box required - [Truffle boxes] (https://truffleframework.com/boxes)
+##### Refer here to know the right boiler plate box required - [Truffle boxes](https://truffleframework.com/boxes)
 
 #### Getting truffle webpack
 > mkdir truffle_voting_webpack
