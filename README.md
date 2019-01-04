@@ -88,9 +88,9 @@ make sure you change the port (from 7545 to 8545) in truffle.js where the ganach
 
 
 ## Know More!
-[Solidity Docs](https://solidity.readthedocs.io/en/develop/)
-[Truffle Docs](http://truffleframework.com/docs/)
-[Ethereum Yellow Paper](https://ethereum.github.io/yellowpaper/paper.pdf)
-[Geth](https://github.com/ethereum/go-ethereum)
-[Parity](https://github.com/paritytech/parity)
-[Remix: Online IDE for Solidity](http://remix.ethereum.org)
+* [Solidity Docs](https://solidity.readthedocs.io/en/develop/)
+* [Truffle Docs](http://truffleframework.com/docs/)
+* [Ethereum Yellow Paper](https://ethereum.github.io/yellowpaper/paper.pdf)
+* [Geth](https://github.com/ethereum/go-ethereum)
+* [Parity](https://github.com/paritytech/parity)
+* [Remix: Online IDE for Solidity](http://remix.ethereum.org)
