@@ -61,7 +61,8 @@ make sure you change the port (from 7545 to 8545) in truffle.js where the ganach
 #### Migrations - truffle
 * Copy Voting.sol to contracts/
 * update 2_deploy_contract.js
->npm install babel-register # assuming it is required
+>npm install babel-register
+* #assuming it is required
 * copy index.html to apps/ change index.js to apps.js
 
 #### compiling - truffle
@@ -83,4 +84,4 @@ make sure you change the port (from 7545 to 8545) in truffle.js where the ganach
 * update index.js with loadCandidatesAndVotes and voteForCandidate functions
 * to test, go to another Powershell and run
 > npm run dev
-It should run the web server which will link to - http://localhost:8080/
+* It should run the web server which will link to - http://localhost:8080/
