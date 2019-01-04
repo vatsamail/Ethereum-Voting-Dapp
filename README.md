@@ -47,3 +47,40 @@
 >deploy.total_votes_for_candidate.call('Rama').toNumber()
 >deploy.vote_for_candidate('Rama', {from: me1})
 >deploy.vote_for_candidate('Rama', {from: me2})
+
+
+### Dealing with Truffle framework
+##### Refer here to know the right boiler plate box required - [Truffle boxes] (https://truffleframework.com/boxes)
+
+#### Getting truffle webpack
+> mkdir truffle_voting_webpack
+>cd truffle_pack
+>truffle unbox webpack
+make sure you change the port (from 7545 to 8545) in truffle.js where the ganache is still running.
+
+#### Migrations - truffle
+* Copy Voting.sol to contracts/
+* update 2_deploy_contract.js
+>npm install babel-register # assuming it is required
+* copy index.html to apps/ change index.js to apps.js
+
+#### compiling - truffle
+* important on window 10 - use PowerShell
+* on other flavors of windows, try git-bash
+>truffle compile
+
+#### migrating - truffle
+* make sure node_modules\.bin\ganache-cli is running on an another window
+>truffle migrate
+
+#### testing in command line - truffle
+* make sure node_modules\.bin\ganache-cli is running on an another window
+>truffle console
+>Voting.deployed().then(function(f) {f.total_votes_for_candidate.call('Rama').then(function(f) {console.log(f.toNumber())})})
+>Voting.deployed().then(function(f) {f.vote_for_candidate('Rama').then(function(f) {console.log(f)})})
+
+#### developing the frontend - javascript
+* update index.js with loadCandidatesAndVotes and voteForCandidate functions
+* to test, go to another Powershell and run
+> npm run dev
+It should run the web server which will link to - http://localhost:8080/
