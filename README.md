@@ -85,3 +85,12 @@ make sure you change the port (from 7545 to 8545) in truffle.js where the ganach
 * to test, go to another Powershell and run
 > npm run dev
 * It should run the web server which will link to - http://localhost:8080/
+
+
+## Know More!
+[Solidity Docs](https://solidity.readthedocs.io/en/develop/)
+[Truffle Docs](http://truffleframework.com/docs/)
+[Ethereum Yellow Paper](https://ethereum.github.io/yellowpaper/paper.pdf)
+[Geth](https://github.com/ethereum/go-ethereum)
+[Parity](https://github.com/paritytech/parity)
+[Remix: Online IDE for Solidity](http://remix.ethereum.org)
