@@ -55,7 +55,8 @@ const App = {
     var candidate_name = $('#candidate').val();
     alert("This Candidate Name: "+candidate_name)
     Voting.deployed().then(function(i) {
-      i.vote_for_candidate(candidate_name, {from: web3.eth.accounts[0]}).then(function(f) {
+      // i.vote_for_candidate(candidate_name, {from: web3.eth.accounts[0]}).then(function(f) {
+      i.vote_for_candidate(candidate_name, {from: account}).then(function(f) { // as per Mahesh's suggestion
         alert("I:"+i+" Candidate: "+candidate_name);
         i.total_votes_for_candidate.call(candidate_name).then(function(f){
           $('#' + candidates[candidate_name]).html(f.toNumber());
